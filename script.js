@@ -28,10 +28,10 @@ listContainer.addEventListener("click", function(e){
 }, false)
 
 function saveData(){
-    localStorage.setItem("data", listContainer.innerHtml);
+    localStorage.setItem("data", listContainer.innerHTML);
 }
 
 function showTask(){
-    listContainer.innerHtml = localStorage.getItem("data");
+    listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
